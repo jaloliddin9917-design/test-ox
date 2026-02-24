@@ -31,6 +31,8 @@ npm run start:dev
 ```
 DATABASE_URL="file:./dev.db"
 JWT_SECRET="your-secret-key"
+OX_SUBDOMAIN="demo"
+OX_TOKEN="Bearer your-ox-token-here"
 ```
 
 ## API Endpoints
@@ -42,3 +44,9 @@ JWT_SECRET="your-secret-key"
 | POST | `/register-company` | JWT | Kompaniya ro'yxatdan o'tkazish |
 | DELETE | `/company/:id` | JWT + Admin | Kompaniyani o'chirish |
 | GET | `/products?page=1&size=10` | JWT + Manager | Mahsulotlar ro'yxati |
+
+
+
+## Eslatma
+
+Berilgan OX API token muddati tugagan. Yangi token bilan `POST /register-company` endpointiga so'rov yuborib test qilish mumkin.
